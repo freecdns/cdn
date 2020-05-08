@@ -1,0 +1,395 @@
+@charset "UTF-8";
+
+html, body {
+	height: 100%;
+} 
+.body-background {
+    /* background-image:url(../../../resource/image/common/bg01.jpg);
+    background-size:cover; 
+    user-select: none;*/
+    background-color:#FFC0CB;
+}
+/* 底部条-start */
+footer {
+	margin-top: -50px;
+	height: 50px;
+	background-color: #ffcaca;
+	z-index: 9999;
+}
+
+.wrap {
+	min-height: calc(100% - 70px);
+}
+
+.main-container {
+	padding-bottom: 50px;
+}
+/* 底部条-end */
+
+.can-not-select {
+    user-select: none;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+
+
+.hidden-area{
+	display: none;
+}
+.navigate-var-top{
+	line-height: 50px;
+	height: 50px;
+}
+.oneline {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.locked {
+	line-height: 20px;
+    overflow: hidden;
+    margin: 10px 0;
+    padding: 8px 8px 8px 24px;
+    border: 1px dashed #f44444;
+    background: #EEE url(https://keylol.com/static/image/common/locked.gif) no-repeat 6px 50%;
+    font-size: 12px;
+    zoom: 1;
+}
+
+.logo {
+    font-family: STXingkai;
+    font-size: 30px;
+}
+.logo img{
+    height: 100%;
+    width: auto;
+}
+
+.logo:link{
+	text-decoration:none ; 
+	color:inherit ;
+}
+.logo:visited {
+	text-decoration:none ; 
+	color:inherit;
+}
+.logo:hover {
+	text-decoration:none ; 
+	color:inherit;
+}
+.logo:active {
+	text-decoration:none ; 
+	color:inherit;
+}
+
+.a-button {
+	position: relative;
+    color: #696969;
+    border-radius: 4px;
+    font-size: larger;
+    border: 1px solid #696969!important;
+    padding: 4px 8px;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+}
+.a-button-no-border {
+	position: relative;
+    color: #696969;
+    text-decoration: none;
+}
+
+.a-button:link {
+	color: #696969;
+   /*  border: 1px solid #696969!important; */
+    text-decoration: none;
+}
+.a-button-no-border:link {
+	color: #696969;
+    text-decoration: none;
+} 
+
+.a-button:visited {
+	color: #696969;
+    /* border: 1px solid #000000!important; */
+    text-decoration: none;
+}
+.a-button-no-border:visited {
+	color: #696969; 
+    text-decoration: none;
+} 
+
+
+.a-button:hover {
+	color: #000000;
+    border: 1px solid #000000!important;
+    text-decoration: none;
+}
+.a-button-no-border:hover {
+	color: #000000;
+    text-decoration: none;
+}
+
+.a-button:active {
+	color: #000000;
+    border: 1px solid #000000!important;
+    text-decoration: none;
+}
+.a-button-no-border:active {
+	color: #000000;
+    text-decoration: none;
+} 
+
+
+
+.padding-right-0 {
+	padding-right: 0px;
+}
+.padding-left-0 {
+	padding-left: 0px;
+}
+.padding-left-6 {
+	padding-left: 6px;
+}
+.padding-left-10 {
+	padding-left: 10px;
+}
+
+.padding-0 {
+	padding: 0px;
+}
+.padding-5 {
+	padding: 5px;
+}
+.padding-10 {
+	padding: 10px !important;
+}
+
+.margin-0 {
+	margin: 0 !important;
+}
+.margin-right-0 {
+	margin-right: 0px;
+}
+.margin-left-0 {
+	margin-left: 0px;
+}
+.margin-right-10 {
+	margin-right: 10px;
+}
+.margin-left-10 {
+	margin-left: 10px;
+}
+.margin-right-20 {
+	margin-right: 20px;
+}
+.margin-left-20 {
+	margin-left: 20px;
+}
+.margin-top-10 {
+	margin-top: 10px;
+}
+.margin-top-20 {
+	margin-top: 20px;
+}
+.margin-top-30 {
+	margin-top: 30px;
+}
+.margin-top-40 {
+	margin-top: 40px;
+}
+.margin-top-20persent {
+	margin-top: 20%;
+}
+
+.margin-bottom-0 {
+	margin-bottom: 0px;
+}
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+.margin-bottom-20 {
+	margin-bottom: 20px;
+}
+.margin-bottom-30 {
+	margin-bottom: 30px;
+}
+.margin-bottom-40 {
+	margin-bottom: 40px;
+}
+.align-content-center {
+	align-content: center;
+}
+.text-align-center {
+	text-align: center;
+}
+.vertical-align-middle{
+	vertical-align : middle;
+}
+.vertical-align-top{
+	vertical-align : top;
+}
+
+.message-box {
+	height:40px;
+}
+.message-error {
+	color: red;
+}
+.message-label {
+	color: black;
+}
+.font-size-20 {
+	font-size: 20px !important;
+}
+.font-size-25 {
+	font-size: 25px !important;
+}
+.font-size-40 {
+	font-size: 40px !important;
+}
+.my-dropdown-menu{
+	min-width: 20px !important;
+	background-color: #d8d5d5 !important;
+}
+.on-mouse-over{
+	cursor:pointer;
+}
+.model-select-td{
+	text-align: center;
+    height: 40px;
+    font-size: larger;
+}
+.image-select-box{
+	width:100%;
+	background-color:#d8d5d5;
+}
+.label-center-34px{
+	text-align: center;
+    line-height: 34px;
+}
+
+/* 覆盖bootstrap样式 ----start */
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 0px solid transparent;
+    border-radius: 0;
+    background-color: #ffcaca;
+}
+
+.dropdown .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #555;
+    background-color: inherit;
+}
+.dropdown .dropdown-menu{
+	background-color: #ffcaca;
+}
+.nav-tabs>li.active>a{
+	background-color: #f0ad4e !important;
+}
+.nav-tabs>li>a{
+	color: gray;
+}
+.nav-tabs>li {
+    text-align: center;
+}
+/* 覆盖bootstrap样式 ----end */
+.hello-content-mobile {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+.pay-ment-area{
+	width:48%;
+	height:100%;
+	text-align: center;
+	border: 2px solid #dedede;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+.pay-ment-selected{
+	border-color: #5cb85c !important;
+}
+
+/* 当前选中状态--start */
+.navbar-nav .selected {
+	background-color: #f44444 !important;
+}
+
+.navbar-nav .selected a {
+	color: white !important;
+}
+/* 当前选中状态--end */
+
+/* 分类--start */
+.category-name{
+	text-align: center;
+	height: 30px;
+}
+.category-box a:link{
+	text-decoration:none ; 
+	color:inherit ;
+}
+.category-box a:visited {
+	text-decoration:none ; 
+	color:inherit;
+}
+.category-box a:hover {
+	text-decoration:none ; 
+	color:#f44444;
+}
+.category-box a:active {
+	text-decoration:none ; 
+	color:inherit;
+}
+/* 分类--end */
+
+/* 专辑列表--start */
+.album-box {
+	margin-bottom: 20px;
+	background-color: #EEE;
+}
+.album-box-comment {
+	padding: 5px;
+}
+.album-box-title{
+	padding: 5px;
+}
+.album-box-title span{
+	word-break : normal; 
+	width :auto; 
+	display :block; 
+	white-space : pre-wrap;
+	word-wrap : break-word;
+	overflow: hidden ;
+}
+
+.album-box a{
+	text-decoration:none ; 
+	color:inherit;
+}
+.album-box a:link{
+	text-decoration:none ; 
+	color:inherit;
+}
+.album-box a:visited {
+	text-decoration:none ; 
+	color:inherit;
+}
+.album-box a:hover {
+	text-decoration:none ; 
+	color:#f44444;
+}
+.album-box a:active {
+	text-decoration:none ; 
+	color:inherit;
+}
+/* 专辑列表--end */
+
