@@ -72,8 +72,12 @@ var Util = {
 					}
 					return;
 				}*/
-				if (err.status == 200 && err.statusText == "OK" && data.success
-						&& typeof (data.success) == "function") {
+				//状态码是200，但是错误是parsererror,error,则是session超时，需要刷新
+				if (err.status == 200 && (err.statusText == "parsererror" || err.statusText == "error")){
+					window.location.reload();
+				}
+				
+				if (err.status == 200 && err.statusText == "OK" && data.success && typeof (data.success) == "function") {
 					data.success(err.responseText);
 					return;
 				}
@@ -95,8 +99,10 @@ var Util = {
 				if (data.submitButton) {
 					$(data.submitButton).button("reset");
 				}
-				if (loading)
+				if (loading){
 					Msg.close(loading);
+				}
+					
 			}
 		});
 	},
