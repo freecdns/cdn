@@ -564,6 +564,15 @@ var ModelSelect = {
 };
 var TableUtil = {
 		bootstrapTable : function(parameters){
+			var ajaxOptions = {
+					complete : function(xhr) {
+						// 状态码是200，但是错误是parsererror,error,则是session超时，需要刷新
+						if (xhr.status == 200 && (xhr.statusText == "parsererror" || xhr.statusText == "error")){
+						 	window.location.reload(); 
+						}
+						 
+		            }
+				};
 			$('#'+parameters.tableId).bootstrapTable({
 		         url: contextPath+parameters.url,         						//请求后台的URL（*）
 		         method: parameters.method||'post',                      		//请求方式（*）
@@ -591,7 +600,8 @@ var TableUtil = {
 		         cardView: parameters.cardView||false,            				//是否显示详细视图
 		         detailView: parameters.detailView||false,						//是否显示父子表
 		         columns: parameters.columns||[],
-		         onLoadSuccess : parameters.onLoadSuccess
+		         onLoadSuccess : parameters.onLoadSuccess,
+		         ajaxOptions : ajaxOptions
 		     });
 		}
 };
