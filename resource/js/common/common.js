@@ -228,6 +228,7 @@ var Util = {
 				contextPath + "/getValidateCode?" + this.getTimestamp());
 	},
 	sendValidateCodeSMSButtonChange : function(obj) {
+		$(obj).attr("disabled", true);
 		var countdown = 60;
 		settime(obj);
 		function settime(obj) {
