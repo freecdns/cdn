@@ -51,9 +51,9 @@ footer {
 	line-height: 20px;
     overflow: hidden;
     margin: 10px 0;
-    padding: 8px 8px 8px 24px;
+    padding: 40px 10px 40px 36px;
     border: 1px dashed #f44444;
-    background: #EEE url(https://keylol.com/static/image/common/locked.gif) no-repeat 6px 50%;
+    background: #EEE url(https://keylol.com/static/image/common/locked.gif) no-repeat 20px 50%;
     font-size: 12px;
     zoom: 1;
 }
